@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
 :root{
     --white:                    #FFFFFF;
     --black:                    #000000;
@@ -8,51 +10,17 @@
     --toastify-color-progress-light: linear-gradient(to right, #FF248D, #9124FF);
 }
 
-// Toastify
-@media only screen and (max-width: 480px){
-    .Toastify__toast-container {
-        width:                      85vw;
-        left:                       7.5vw;
-        bottom:                     32px;
-        
-        .Toastify__toast {
-            min-height:             50px;
-            padding:                10px;
-            font-size:              .85rem;
-            border-radius:          8px;
-        }
-
-        .Toastify__progress-bar--wrp{
-            height:                 6px;
-        }
-    }
+*{
+    padding:            0;
+    margin:             0;
+    border:             0;
+    font-size:          100%;
+    list-style:         none;
+    text-decoration:    none;
 }
 
-// [data-theme="light"]{
-//     --black:                    #ffffff;
-//     --white:                    #020202;
-// }
-
-html, body, #root, .App{
-    width:                      100vw;
-    max-width:                  100vw;
-    position:                   relative;     
-    overflow-x:                 hidden;
-    scroll-behavior:            smooth;
-    min-height:                 100vh;
-    -webkit-tap-highlight-color:transparent;
-    background-color:           var(--background);
-    height:                     var(--app-height);
-}
-
-input:focus, textarea:focus, select:focus{
-    outline:                    none;
-}
-
-.App{
-    touch-action:               manipulation;
-    touch-action:               pan-x pan-y;
-    // transition:                 all 1s;
+#root{
+    width:              100%;
 }
 
 .noSelect{
@@ -64,7 +32,43 @@ input:focus, textarea:focus, select:focus{
               user-select:      none;
 }
 
-.notAllowed{
-    cursor:                     not-allowed;
-    opacity:                    .3;
+html, body{
+    width:              100%;
+    min-width:          100%;
+    background-color:   var(--background);
+    font-size:          16px;
+    font-family:        "Poppins", sans-serif;
+    scroll-behavior:    smooth;
+}
+
+body{
+    min-height:         100%;
+    overflow-x:         hidden;
+}
+
+p::-moz-selection, h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, h5::-moz-selection, h6::-moz-selection, a::-moz-selection, img::-moz-selection{ /*For Firefox */
+    color:              #fff;
+    background:         var(--main-soft);
+}
+  
+p::selection, h1::selection, h2::selection, h3::selection, h4::selection, h5::selection, h6::selection, a::selection, img::selection, input::selection{
+    color:              #fff;
+    background:         var(--main-soft);;
+}
+
+::-webkit-scrollbar{
+    width:              10px;
+}
+  
+::-webkit-scrollbar-track{
+    background:         var(--main);
+}
+  
+::-webkit-scrollbar-thumb{
+    background:         var(--main-soft2);
+    border-radius:      200px;
+}
+  
+::-webkit-scrollbar-thumb:hover{
+    background:         var(--main-soft);
 }
