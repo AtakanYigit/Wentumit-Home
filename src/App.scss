@@ -1,0 +1,70 @@
+:root{
+    --white:                    #FFFFFF;
+    --black:                    #000000;
+    --background:               #f5f5f5;
+    --main:                     #FF248D;
+    --text-white:               #FFFFFF;
+    --app-height:               100vh;
+    --toastify-color-progress-light: linear-gradient(to right, #FF248D, #9124FF);
+}
+
+// Toastify
+@media only screen and (max-width: 480px){
+    .Toastify__toast-container {
+        width:                      85vw;
+        left:                       7.5vw;
+        bottom:                     32px;
+        
+        .Toastify__toast {
+            min-height:             50px;
+            padding:                10px;
+            font-size:              .85rem;
+            border-radius:          8px;
+        }
+
+        .Toastify__progress-bar--wrp{
+            height:                 6px;
+        }
+    }
+}
+
+// [data-theme="light"]{
+//     --black:                    #ffffff;
+//     --white:                    #020202;
+// }
+
+html, body, #root, .App{
+    width:                      100vw;
+    max-width:                  100vw;
+    position:                   relative;     
+    overflow-x:                 hidden;
+    scroll-behavior:            smooth;
+    min-height:                 100vh;
+    -webkit-tap-highlight-color:transparent;
+    background-color:           var(--background);
+    height:                     var(--app-height);
+}
+
+input:focus, textarea:focus, select:focus{
+    outline:                    none;
+}
+
+.App{
+    touch-action:               manipulation;
+    touch-action:               pan-x pan-y;
+    // transition:                 all 1s;
+}
+
+.noSelect{
+    -webkit-touch-callout:      none;
+      -webkit-user-select:      none;
+       -khtml-user-select:      none;
+         -moz-user-select:      none;
+          -ms-user-select:      none;
+              user-select:      none;
+}
+
+.notAllowed{
+    cursor:                     not-allowed;
+    opacity:                    .3;
+}
