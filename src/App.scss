@@ -21,6 +21,7 @@
 
 #root{
     width:              100%;
+    position:           relative;
 }
 
 .noSelect{
@@ -46,14 +47,14 @@ body{
     overflow-x:         hidden;
 }
 
-p::-moz-selection, h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, h5::-moz-selection, h6::-moz-selection, a::-moz-selection, img::-moz-selection{ /*For Firefox */
+p::-moz-selection, h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, h5::-moz-selection, h6::-moz-selection, a::-moz-selection, img::-moz-selection, span::-moz-selection, input::-moz-selection{/*For Firefox */
     color:              #fff;
-    background:         var(--main-soft);
+    background:         var(--main);
 }
   
-p::selection, h1::selection, h2::selection, h3::selection, h4::selection, h5::selection, h6::selection, a::selection, img::selection, input::selection{
+p::selection, h1::selection, h2::selection, h3::selection, h4::selection, h5::selection, h6::selection, a::selection, img::selection, div::selection, span::selection, input::selection{
     color:              #fff;
-    background:         var(--main-soft);;
+    background:         var(--main);;
 }
 
 ::-webkit-scrollbar{
@@ -61,14 +62,31 @@ p::selection, h1::selection, h2::selection, h3::selection, h4::selection, h5::se
 }
   
 ::-webkit-scrollbar-track{
-    background:         var(--main);
+    background:         var(--background);
 }
   
 ::-webkit-scrollbar-thumb{
-    background:         var(--main-soft2);
+    background:         var(--main);
     border-radius:      200px;
 }
   
 ::-webkit-scrollbar-thumb:hover{
-    background:         var(--main-soft);
+    background:         var(--main);
+}
+
+.bgShape{
+    position:           absolute;
+    left:               0;
+    width:              100%;
+    z-index:            0;
+}
+
+.phone{
+    margin-top:         -10%;
+    width:              20%;
+    position:           absolute;
+    z-index:            0;
+    /*center*/
+    left:               50%;
+    transform:          translateX(-50%);
 }
