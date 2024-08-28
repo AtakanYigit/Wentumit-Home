@@ -3,7 +3,7 @@ import QR from "../../assets/QR.png";
 import "./Header.scss";
 
 const Header = () =>{
-    /*
+    
     useLayoutEffect(() => {
         const animateLetterOut = (cw, i) =>{
             setTimeout(() =>{
@@ -58,7 +58,9 @@ const Header = () =>{
         changeWord();
         setInterval(changeWord, 2000);
     }, []);
-*/
+
+
+
 
     return (
         <div className = "header">
@@ -68,8 +70,7 @@ const Header = () =>{
                         <span className = "start">Can’t Decide&nbsp;</span>
                         <span className = "word">When</span>
                         <span className = "word">Where</span>
-                        <span className = "word">Word</span>
-                        <span className = "word">Word2</span>
+                        <span className = "word">Time</span>
                         <br/>To Meet?
                     </h1>
                 </div>
@@ -78,6 +79,27 @@ const Header = () =>{
                     <p className = "infoText">Habit-building doesn't have to be a lonely, difficult journey. Onlist's productivity app makes it fun, social, and rewarding, with gamification features that turn habit-forming into a game you can win. Get started today and start seeing results!</p>
                     <img className = "qr noSelect" src = {QR} alt = "qr" />
                     {/* <CTA/> */}
+                </div>
+
+                <div className = "ideasContainer">
+                    <div className = "idea ideaLeft idea1 noSelect">
+                        <p>I'm available on Tuesday<br/>but not on Friday 1.</p>
+                    </div>
+                    <div className = "idea ideaLeft idea2 noSelect">
+                        <p>I'm available on Tuesday<br/>but not on Friday 2.</p>
+                    </div>
+                    <div className = "idea ideaLeft idea3 noSelect">
+                        <p>I'm available on Tuesday<br/>but not on Friday 3.</p>
+                    </div>
+                    <div className = "idea ideaRight idea4 noSelect">
+                        <p>I'm available on Tuesday<br/>but not on Friday 4.</p>
+                    </div>
+                    <div className = "idea ideaRight idea5 noSelect">
+                        <p>I'm available on Tuesday<br/>but not on Friday 5.</p>
+                    </div>
+                    <div className = "idea ideaRight idea6 noSelect">
+                        <p>I'm available on Tuesday<br/>but not on Friday 6.</p>
+                    </div>
                 </div>
             </div>
         </div>

@@ -1,0 +1,63 @@
+.outro{
+    width:              100vw;
+    height:             85lvh;
+    margin-top:         110lvh;
+    display:            flex;
+    flex-direction:     column;
+    justify-content:    center;
+    align-items:        center;
+    gap:                32px;
+    z-index:            50;
+
+    .bigText{
+        font-size:          4rem;
+        font-weight:        600;
+        color:              var(--black);
+        text-align:         center;
+
+        @media screen and (max-width: 1200px){
+            font-size:          3rem;
+        }
+    }
+
+    .qr{
+        width:              200px;
+        height:             200px;
+        border-radius:      16px;
+        transition:         all 0.3s ease-in-out;
+
+        &:hover{
+            scale:              2;
+            box-shadow:         0 0 128px 40vw var(--main); 
+        }
+    }
+
+    a{
+        font-size:          1.5rem;
+        font-weight:        600;
+        color:              var(--black);
+        text-align:         center;
+        text-decoration:    none;
+        transition:         all 0.3s ease-in-out;
+
+        &:hover{
+            color:              var(--blue);
+        }
+
+        @media screen and (max-width: 1200px){
+            font-size:          1.5rem;
+        }
+    }
+
+    .freeText{
+        font-size:          1rem;
+        font-weight:        600;
+        color:              var(--black);
+        text-align:         center;
+        margin-top:         -8px;
+
+        @media screen and (max-width: 1200px){
+            font-size:          1.5rem;
+        }
+    }
+}

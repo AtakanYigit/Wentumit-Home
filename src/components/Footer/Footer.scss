@@ -8,6 +8,8 @@ footer{
     border-radius:      6px;
     padding:            0 3%;
     height:             56px;
+    position:           relative;
+    z-index:            50;
 
     @media screen and (max-width: 768px){
         height:             48px;
@@ -46,7 +48,7 @@ footer{
     }
 
     p{
-        color:              var(--main);
+        color:              var(--black);
         font-size:          1.25rem;
         font-weight:        700;
                     

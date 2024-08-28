@@ -1,0 +1,60 @@
+.swipeCards{
+    width:              100vw;
+    height:             85lvh;
+    margin-top:         60lvh;
+    display:            flex;
+    justify-content:    center;
+    align-items:        center;
+    z-index:            50;
+
+    .swipeCard{     
+        display:                        flex;
+        justify-content:                center;
+        align-items:                    center;
+        font-size:                      2rem;
+        font-weight:                    500;
+        color:                          black;    
+        user-select:                    none;
+        -moz-user-select:               none;
+        -webkit-user-select:            none; 
+        flex:                           1;
+        -webkit-tap-highlight-color:    transparent;
+        background-color:               var(--white);
+        position:                       absolute;
+        height:                         50lvh;
+        aspect-ratio:                   1/1.4;
+        border-radius:                  16px;
+        transition:                     all 0.6s;
+    
+        p{
+            color:                          var(--black);
+            font-size:                      1.6rem;
+            font-weight:                    600;
+            width:                          80%;
+            text-align:                     center;
+            margin-top:                     -16px;
+            transition:                     all .4s .2s ease-in-out;
+        }
+    
+        &.preferred, &.available, &.unavailable{
+            p{
+                padding-bottom:                 24px;
+                color:                          white;
+                transition:                     all .4s;
+            }
+    
+            &.preferred{
+                background-color:                   #9124ff;
+            }
+            
+            &.available{
+                background-color:                   var(--main);
+            }
+            
+            &.unavailable{
+                background-color:                   #000;
+            }
+        }
+    }
+
+}

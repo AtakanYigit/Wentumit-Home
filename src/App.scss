@@ -22,6 +22,7 @@
 #root{
     width:              100%;
     position:           relative;
+    background-color:   var(--background);
 }
 
 .noSelect{
@@ -82,10 +83,10 @@ p::selection, h1::selection, h2::selection, h3::selection, h4::selection, h5::se
 }
 
 .phone{
-    margin-top:         -10%;
+    margin-top:         -7vh;
     width:              20%;
     position:           absolute;
-    z-index:            0;
+    z-index:            51;
     /*center*/
     left:               50%;
     transform:          translateX(-50%);
