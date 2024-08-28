@@ -1,12 +1,14 @@
 .screenshots{
     width:              120%;
-    margin:             20px 0 -50lvh -10%;
+    margin:             20px 0 -18lvh -10%;
+    padding-top:        32px;
     display:            flex;
     justify-content:    center;
     align-items:        center;
     gap:                7.4vw;
     position:           relative;
-    z-index:            0;
+    z-index:            55;
+    overflow:           hidden;
 
     @media screen and (max-width: 900px){
         margin-top:         48px;
@@ -32,6 +34,7 @@
     }
 
     .screenshot{
+        margin-bottom:      -20lvh;
         transform:          rotate(15deg);
         width:              19vw;
         border-radius:      16px;

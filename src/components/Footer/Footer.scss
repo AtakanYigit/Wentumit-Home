@@ -5,15 +5,21 @@ footer{
     background-color:   var(--white);
     margin:             80px 3rem 24px;
     width:              calc(94% - 6rem);
+    height:             56px;
     border-radius:      6px;
     padding:            0 3%;
-    height:             56px;
     position:           relative;
-    z-index:            50;
+    z-index:            60;
+    box-shadow:         0 0 32px 0 rgba(0, 0, 0, 0.08);
 
     @media screen and (max-width: 768px){
         height:             48px;
+        width:              calc(94% - 3rem);
         margin:             80px 1.5rem 20px;
+    }
+
+    @media screen and (max-width: 500px){
+        height:             40px;
     }
 
     .footerSocials{
@@ -51,9 +57,10 @@ footer{
         color:              var(--black);
         font-size:          1.25rem;
         font-weight:        700;
+        white-space:        nowrap;
                     
         @media screen and (max-width: 500px){
-            font-size:          1rem;
+            font-size:          .75rem;
         }
     }
 }

@@ -83,8 +83,8 @@ p::selection, h1::selection, h2::selection, h3::selection, h4::selection, h5::se
 }
 
 .phone{
-    margin-top:         -7vh;
-    width:              20%;
+    margin-top:         -12lvh;
+    width:              clamp(400px, 20%, 400px);
     position:           absolute;
     z-index:            51;
     /*center*/

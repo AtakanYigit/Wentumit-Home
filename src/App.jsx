@@ -22,9 +22,9 @@ const App = () =>{
         const ideasLeft  = document.getElementsByClassName("ideaLeft");
         const ideasRight = document.getElementsByClassName("ideaRight");
 
-        /* Idea Cards */
+        /* --------- Idea Cards --------- */
         for (let i = 0; i < ideasLeft.length; i++) {
-            gsap.to(".ideaLeft", {left: "41vw", top: "57vw", rotate: -90, opacity: 0, scrollTrigger: {
+            gsap.to(".ideaLeft", {left: "41vw", top: "57vw", rotate: -90, scale: .8, opacity: 0, scrollTrigger: {
                 trigger: ".ideaLeft",
                 start:   "top 5%",
                 end:     "bottom -40%",
@@ -33,7 +33,7 @@ const App = () =>{
         }
 
         for (let i = 0; i < ideasRight.length; i++) {
-            gsap.to(".ideaRight", {right: "41vw", top: "57vw", rotate: 90, opacity: 0, scrollTrigger: {
+            gsap.to(".ideaRight", {right: "41vw", top: "57vw", rotate: 90, scale: .8, opacity: 0, scrollTrigger: {
                 trigger: ".ideaRight",
                 start:   "top 5%",
                 end:     "bottom -40%",
@@ -41,15 +41,15 @@ const App = () =>{
             }});
         }
 
-        /* Background Scale */
-        gsap.fromTo(bgElement, {scale: 1, y: 0}, {scale: 3 , y: -100, scrollTrigger: {
+        /* --------- Background Scale --------- */
+        gsap.fromTo(bgElement, {scale: 1, y: 0}, {scale: 2.5 , y: -100, scrollTrigger: {
             trigger: bgElement,
             start:  "20% 100%",
             end:    "top 40%",
             scrub:  true,
         }});
 
-        /* Background Fade Away */
+        /* --------- Background Fade Away --------- */
         gsap.to(bgElement, {opacity: 0, scrollTrigger: {
             trigger: phone,
             start:  "top 10%",
@@ -57,15 +57,15 @@ const App = () =>{
             scrub:  true,
         }});
 
-        /* Phone */
-        gsap.fromTo(phone, {scale: .6}, {scale: 1.1, scrollTrigger: {
+        /* --------- Phone --------- */
+        gsap.fromTo(phone, {scale: .6, y: 0}, {scale: 1, y:  "-20vh", scrollTrigger: {
             trigger: phone,
             start:   "top 85%",
             end:     "top 0%",
             scrub:   true,
         }});
 
-        /* SwipeCards */
+        /* --------- SwipeCards --------- */
         //Swipe Card 1
         gsap.to("#swipeCard1", {x: "33vw", rotate: 90, backgroundColor: "#FF248D", color: "#FFFFFF", opacity: 0, scrollTrigger: {
             trigger: ".swipeCards",
@@ -94,13 +94,12 @@ const App = () =>{
         ScrollTrigger.create({
             trigger:    ".swipeCards",
             start:      "top 10%",
-            end:        "bottom -80%",
+            end:        "bottom -10%",
             pin:        true,
             pinSpacing: false
         })
     });
     
-
     return (
         <div>
             <Navbar/>

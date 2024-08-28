@@ -1,9 +1,9 @@
-import { useLayoutEffect } from "react";
-import QR from "../../assets/QR.png";
+import {useLayoutEffect} from "react";
+import QR             from "../../assets/QR.png";
+import GooglePlayLogo from "../../assets/GooglePlayLogo.webp";
 import "./Header.scss";
 
 const Header = () =>{
-    
     useLayoutEffect(() => {
         const animateLetterOut = (cw, i) =>{
             setTimeout(() =>{
@@ -59,9 +59,6 @@ const Header = () =>{
         setInterval(changeWord, 2000);
     }, []);
 
-
-
-
     return (
         <div className = "header">
             <div className = "headerContainer">
@@ -76,10 +73,32 @@ const Header = () =>{
                 </div>
                 
                 <div className = "infoContainer">
-                    <p className = "infoText">Habit-building doesn't have to be a lonely, difficult journey. Onlist's productivity app makes it fun, social, and rewarding, with gamification features that turn habit-forming into a game you can win. Get started today and start seeing results!</p>
-                    <img className = "qr noSelect" src = {QR} alt = "qr" />
+                    <p className = "infoText">
+                        No more back and forth messages. Just open up a poll and let your friends swipe to vote on the best time to meet. Wentumit will automatically find the best time / place / day for everyone. So you can spend less time planning and more time meeting.
+                    </p>
+                    <p className = "infoText">
+                        Start using Wentumit today!
+                    </p>
+                    <div className = "startUsingContainer">
+                        <div className = "qrContainer">
+                            <img className = "qr noSelect" src = {QR} alt = "qr" />
+                            <a href = "https://play.google.com/store/apps/details?id=com.wentumit.www.twa&hl=en" target = "_blank" className = "googlePlayContainer">
+                                <img src = {GooglePlayLogo} alt = "" />
+                                <p>Google Play</p>
+                            </a>
+                        </div>
+
+                        <p>or</p>
+
+                        <a href = "">On Your Browser</a>
+                    </div>
                     {/* <CTA/> */}
+                    
+                    <p className = "infoText">
+                        Completely Free.
+                    </p>
                 </div>
+                
 
                 <div className = "ideasContainer">
                     <div className = "idea ideaLeft idea1 noSelect">

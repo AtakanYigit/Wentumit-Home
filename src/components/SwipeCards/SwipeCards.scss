@@ -35,26 +35,5 @@
             margin-top:                     -16px;
             transition:                     all .4s .2s ease-in-out;
         }
-    
-        &.preferred, &.available, &.unavailable{
-            p{
-                padding-bottom:                 24px;
-                color:                          white;
-                transition:                     all .4s;
-            }
-    
-            &.preferred{
-                background-color:                   #9124ff;
-            }
-            
-            &.available{
-                background-color:                   var(--main);
-            }
-            
-            &.unavailable{
-                background-color:                   #000;
-            }
-        }
     }
-
 }

@@ -8,25 +8,22 @@ nav{
     border-radius:      8px;
     gap:                20px;
     width:              calc(94% - 6rem);
-    height:             64px;
+    height:             56px;
     padding:            0 3%;
     margin:             0 3rem;
     background-color:   var(--white);
-    box-shadow:         0 0 16px 0 #41297714;
-
-    @media screen and (max-width: 900px){
-        width:              calc(94% - 4rem);
-        padding:            0 3%;
-        margin:             0 2rem;
-    }
+    box-shadow:         0 0 32px 0 rgba(0, 0, 0, 0.08);
 
     @media screen and (max-width: 768px){
         height:             48px;
-        border-radius:      6px;
+        width:              calc(94% - 3rem);
+        margin:             0 1.5rem;
     }
 
     @media screen and (max-width: 500px){
-        gap:                12px;
+        height:             40px;
+        width:              calc(94% - 2rem);
+        margin:             0 1rem;
     }
     
     div{
