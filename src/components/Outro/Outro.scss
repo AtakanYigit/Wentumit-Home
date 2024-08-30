@@ -11,6 +11,7 @@
     z-index:            50;
 
     @media screen and (max-width: 768px){
+        margin-top:         90lvh;
         margin-bottom:      64px;
     }
 
@@ -69,7 +70,6 @@
             transition:         all 0.3s ease-in-out;
         }
     }
-
     
     .startUsingContainer{
         display:            flex;
@@ -90,6 +90,8 @@
         }
         
         @media screen and (max-width: 480px){
+            margin-top:         0px;
+            gap:                12px;
             width:              80vw;
         }
 

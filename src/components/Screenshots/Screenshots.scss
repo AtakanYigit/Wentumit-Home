@@ -15,11 +15,12 @@
         gap:                5vw;
     }
 
-    @media screen and (max-width: 500px){
+    @media screen and (max-width: 480px){
         width:              100%;
         margin:             0;
         gap:                8vw 4vw;
         flex-wrap:          wrap;
+        padding-top:        16px;
     }
 
     h2{

@@ -57,6 +57,13 @@ const App = () =>{
             scrub:  true,
         }});
 
+        gsap.to(".swipeCards", {backgroundColor: "#f5f5f5", scrollTrigger: {
+            trigger: phone,
+            start:  "top 10%",
+            end:    "bottom 0%",
+            scrub:  true,
+        }});
+
         /* --------- Header --------- */
         gsap.to(".header", {opacity: 0, scrollTrigger: {
             trigger: ".header",
