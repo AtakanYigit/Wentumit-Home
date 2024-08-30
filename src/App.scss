@@ -83,10 +83,19 @@ p::selection, h1::selection, h2::selection, h3::selection, h4::selection, h5::se
 
 .phone{
     margin-top:         -12lvh;
-    width:              clamp(400px, 20%, 400px);
+    width:              400px;
     position:           absolute;
     z-index:            1;
-    /*center*/
     left:               50%;
     transform:          translateX(-50%);
+
+    @media screen and (max-width: 768px){
+        margin-top:         -12lvh;
+        width:              300px;
+    }
+
+    @media screen and (max-width: 480px){
+        margin-top:         -15lvh;
+        width:              250px;
+    }
 }

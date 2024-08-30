@@ -324,6 +324,7 @@
         @media screen and (max-width: 768px){
             font-size:          1.85vw;
             padding:            2vw 2.75vw;
+            border-radius:      6px;
         }
 
         @media screen and (max-width: 480px){
@@ -342,7 +343,7 @@
 
             @media screen and (max-width: 768px){
                 top:                9.5vh;
-                left:               -5.5vw;
+                left:               -9.5vw;
             }
 
             @media screen and (max-width: 480px){
@@ -389,8 +390,8 @@
             transform:          rotate(8deg);
 
             @media screen and (max-width: 768px){
-                top:                13vh;
-                right:              -5.5vw;
+                top:                12vh;
+                right:              -9.5vw;
             }
 
             @media screen and (max-width: 480px){
