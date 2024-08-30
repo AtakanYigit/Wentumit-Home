@@ -10,10 +10,9 @@ const Navbar = () =>{
                 </a>
                 <a href = "#">Home</a>
                 <a href = "#layer0">Features</a>
-                <a href = "#screenshots">Screenshots</a>
             </div>
 
-            <a href="">
+            <a href = "https://www.wentumit.com/">
                 Start Using Now!
             </a>
         </nav>

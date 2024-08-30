@@ -46,6 +46,14 @@ nav{
             color:              var(--black);
             transition:         all 0.2s ease-in-out;
 
+            @media screen and (max-width: 768px){
+                font-size:          1rem;
+            }
+
+            @media screen and (max-width: 500px){
+                font-size:          0.85rem;
+            }
+
             &:hover{
                 transform:          scale(1.02);
             }
@@ -57,6 +65,14 @@ nav{
                 align-items:        center;
                 overflow:           hidden;
                 transition:         all 0.2s ease-in-out;
+
+                @media screen and (max-width: 768px){
+                    height:             28px;
+                }
+
+                @media screen and (max-width: 500px){
+                    height:             24px;
+                }
 
                 img{
                     width:              100%;
@@ -73,7 +89,7 @@ nav{
     
     >a{
         position:           relative;
-        font-size:          1.2rem;
+        font-size:          1rem;
         font-weight:        700;
         color:              var(--main);
         background-color:   var(--white);
@@ -88,37 +104,12 @@ nav{
             background-color:   var(--main);
             color:              var(--white);
             padding:            2px 8px 2px;
+            font-size:          .9rem;
         }
 
         @media screen and (max-width: 500px){
             border:             2px solid var(--main);
             padding:            1px 6px 1px;
-        }
-
-        img{
-            opacity:            0;
-            position:           absolute;
-            left:               4px;
-            top:                3px;
-            transform:          scale(.5) rotate(0deg);
-            transition:         all 0.3s ease-in-out;
-
-            @media screen and (max-width: 768px){
-                display:            none;
-            }
-        }
-
-        &:hover{
-            color:                  var(--white);
-            background-color:       var(--main);
-
-            img{
-                opacity:                1;
-                position:               absolute;
-                left:                   -44px;
-                top:                    -4px;
-                transform:              scale(1.2) rotate(-365deg);
-            }
         }
     }
 }
