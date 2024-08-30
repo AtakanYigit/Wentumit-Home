@@ -1,8 +1,36 @@
-# React + Vite
+# Meeting Scheduler Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is the landing page of the app [Wentumit](https://www.wentumit.com/). You can inspect the landing page through this [link](https://home.wentumit.com/).Built with [Vite](https://vitejs.dev/) and [React.js](https://reactjs.org/). It utilizes [GSAP](https://greensock.com/gsap/) and [GSAP ScrollTrigger](https://greensock.com/scrolltrigger/) for smooth animations and scroll-triggered effects.
 
-Currently, two official plugins are available:
+## Technologies Used
+- **Vite**: For fast development and build process.
+- **React.js**: Frontend framework for building the user interface.
+- **SCSS**: For writing maintainable and responsive styles.
+- **GSAP**: For high-performance animations.
+- **GSAP ScrollTrigger**: To create scroll-based animations and interactions.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Installation
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/yourusername/meeting-scheduler.git
+   cd meeting-scheduler
+   ```
+
+2. Install dependencies:
+   ```
+   npm install
+   # or
+   yarn install
+   ```
+3. Start the development server:
+   ```
+    npm run dev
+    # or
+    yarn dev
+   ```
+4. Open your browser and navigate to http://localhost:3000.
+
+
+
