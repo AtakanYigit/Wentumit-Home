@@ -74,51 +74,63 @@ const Header = () =>{
                 
                 <div className = "infoContainer">
                     <p className = "infoText">
-                        No more back and forth messages. Just open up a poll and let your friends swipe to vote on the best time to meet. Wentumit will automatically find the best time / place / day for everyone. So you can spend less time planning and more time meeting.
+                        No more back and forth messages. Just open up a poll and let your friends swipe to vote on the best time to meet. <span>Wentumit will automatically find the best time / place / day for everyone. So you can spend less time planning and more time meeting.</span>
                     </p>
-                    <p className = "infoText">
+                    <p className = "startUsingToday">
                         Start using Wentumit today!
                     </p>
                     <div className = "startUsingContainer">
-                        <div className = "qrContainer">
-                            <img className = "qr noSelect" src = {QR} alt = "qr" />
-                            <a href = "https://play.google.com/store/apps/details?id=com.wentumit.www.twa&hl=en" target = "_blank" className = "googlePlayContainer">
+                        <a href = "https://play.google.com/store/apps/details?id=com.wentumit.www.twa&hl=en" target = "_blank" className = "googlePlayContainer">
+                            <div className = "qrContainer">
+                                <img className = "qr noSelect" src = {QR} alt = "qr" />
+                            </div>
+                            <div className = "googlePlayContainerInner">
                                 <img src = {GooglePlayLogo} alt = "" />
                                 <p>Google Play</p>
-                            </a>
-                        </div>
+                            </div>
+                        </a>
 
-                        <p>or</p>
+                        <p className = "or">or</p>
 
-                        <a href = "">On Your Browser</a>
+                        <a className = "onYourBrowserButton" href = "#">
+                            <span className = "iconWrapper">
+                                <svg width = "10" className = "iconSvg" xmlns = "http://www.w3.org/2000/svg" fill = "none" viewBox = "0 0 14 15">
+                                    <path fill = "#000000" d = "M13.376 11.552l-.264-10.44-10.44-.24.024 2.28 6.96-.048L.2 12.56l1.488 1.488 9.432-9.432-.048 6.912 2.304.024z"></path>
+                                </svg>
+                                
+                                <svg className = "iconSvg  iconSvg--copy" xmlns = "http://www.w3.org/2000/svg" width = "10" fill = "none" viewBox = "0 0 14 15">
+                                    <path fill =   "#000000" d = "M13.376 11.552l-.264-10.44-10.44-.24.024 2.28 6.96-.048L.2 12.56l1.488 1.488 9.432-9.432-.048 6.912 2.304.024z"></path>
+                                </svg>
+                            </span>
+                            On Your Browser
+                        </a>
                     </div>
                     {/* <CTA/> */}
                     
-                    <p className = "infoText">
-                        Completely Free.
+                    <p className = "completelyFree">
+                        Completely Free!
                     </p>
                 </div>
-                
-
-                <div className = "ideasContainer">
-                    <div className = "idea ideaLeft idea1 noSelect">
-                        <p>I'm available on Tuesday<br/>but not on Friday 1.</p>
-                    </div>
-                    <div className = "idea ideaLeft idea2 noSelect">
-                        <p>I'm available on Tuesday<br/>but not on Friday 2.</p>
-                    </div>
-                    <div className = "idea ideaLeft idea3 noSelect">
-                        <p>I'm available on Tuesday<br/>but not on Friday 3.</p>
-                    </div>
-                    <div className = "idea ideaRight idea4 noSelect">
-                        <p>I'm available on Tuesday<br/>but not on Friday 4.</p>
-                    </div>
-                    <div className = "idea ideaRight idea5 noSelect">
-                        <p>I'm available on Tuesday<br/>but not on Friday 5.</p>
-                    </div>
-                    <div className = "idea ideaRight idea6 noSelect">
-                        <p>I'm available on Tuesday<br/>but not on Friday 6.</p>
-                    </div>
+            </div>
+            
+            <div className = "ideasContainer">
+                <div className = "idea ideaLeft idea1 noSelect">
+                    <p>I'm available on Tuesday<br/>but not on Friday 1.</p>
+                </div>
+                <div className = "idea ideaLeft idea2 noSelect">
+                    <p>I'm available on Tuesday<br/>but not on Friday 2.</p>
+                </div>
+                <div className = "idea ideaLeft idea3 noSelect">
+                    <p>I'm available on Tuesday<br/>but not on Friday 3.</p>
+                </div>
+                <div className = "idea ideaRight idea4 noSelect">
+                    <p>I'm available on Tuesday<br/>but not on Friday 4.</p>
+                </div>
+                <div className = "idea ideaRight idea5 noSelect">
+                    <p>I'm available on Tuesday<br/>but not on Friday 5.</p>
+                </div>
+                <div className = "idea ideaRight idea6 noSelect">
+                    <p>I'm available on Tuesday<br/>but not on Friday 6.</p>
                 </div>
             </div>
         </div>

@@ -16,6 +16,10 @@
         color:              var(--black);
         text-align:         center;
 
+        span{
+            color:              var(--main);
+        }
+
         @media screen and (max-width: 1200px){
             font-size:          3rem;
         }

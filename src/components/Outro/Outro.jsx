@@ -5,9 +5,9 @@ const Outro = () =>{
     return (
         <div className = "outro">
             <p className = "bigText">
-                Best Day To Download<br/>
-                Wentumit is Selected<br/>
-                - Today -
+                Votes Say Best Day To<br/>
+                <span>Start Using Wentumit</span> is <br/>
+                Today
             </p>
 
             <img className = "qr noSelect" src = {QR} alt = "qr" />
