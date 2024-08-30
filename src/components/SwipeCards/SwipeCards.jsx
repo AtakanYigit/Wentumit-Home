@@ -4,13 +4,13 @@ const SwipeCards = () =>{
     return (
         <div className = "swipeCards">
             <div id = "swipeCard3" className = "swipeCard">
-                <p>Text 1</p>
+                <p>Send a link to your friends and you're ready to go.</p>
             </div>
             <div id = "swipeCard2" className = "swipeCard">
-                <p>Text 1</p>
+                <p>Algorithm automatically picks the best time and place for you.</p>
             </div>
             <div id = "swipeCard1" className = "swipeCard">
-                <p>Text 1</p>
+                <p>Swipe left or right and quickly decide on day or place you'll meet.</p>
             </div>
         </div>
     );

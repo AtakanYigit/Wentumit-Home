@@ -38,21 +38,38 @@
         }
     }
 
-    .qr{
+    .qrOuter{
+        display:            flex;
+        justify-content:    center;
+        align-items:        center;
         width:              200px;
         height:             200px;
         border-radius:      16px;
+        transform-origin:   bottom center;
         transition:         all 0.3s ease-in-out;
-
+        z-index:            50;
+        padding:            8px 40px;
+    
         @media screen and (max-width: 768px){
             display:            none;
         }
 
         &:hover{
             scale:              2;
-            box-shadow:         0 0 128px 40vw var(--main); 
+
+            .qr{
+
+                box-shadow:         0 0 128px 40vw var(--main); 
+            }
+        }
+
+        .qr{
+            width:              100%;
+            border-radius:      16px;
+            transition:         all 0.3s ease-in-out;
         }
     }
+
     
     .startUsingContainer{
         display:            flex;
@@ -62,6 +79,7 @@
         width:              60vw;
         height:             48px;
         gap:                32px;
+        z-index:            49;
 
         @media screen and (max-width: 768px){
             flex-direction:     column;

@@ -11,7 +11,9 @@ const Outro = () =>{
                 Today
             </p>
 
-            <img className = "qr noSelect" src = {QR} alt = "qr" />
+            <div className = "qrOuter">
+                <img className = "qr noSelect" src = {QR} alt = "qr" />
+            </div>
 
             <div className = "startUsingContainer">
                 <a href = "https://play.google.com/store/apps/details?id=com.wentumit.www.twa&hl=en" target = "_blank" className = "googlePlayContainer">
