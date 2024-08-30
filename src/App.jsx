@@ -101,7 +101,7 @@ const App = () =>{
         //Pin SwipeCards
         ScrollTrigger.create({
             trigger:    ".swipeCards",
-            start:      "top 10%",
+            start:      "top 5%",
             end:        "bottom -10%",
             pin:        true,
             pinSpacing: false
