@@ -1,4 +1,4 @@
-# Meeting Scheduler Website
+# Wentumit Landing Page
 
 This is the landing page of the app [Wentumit](https://www.wentumit.com/). You can inspect the landing page through this [link](https://home.wentumit.com/).Built with [Vite](https://vitejs.dev/) and [React.js](https://reactjs.org/). It utilizes [GSAP](https://greensock.com/gsap/) and [GSAP ScrollTrigger](https://greensock.com/scrolltrigger/) for smooth animations and scroll-triggered effects.
 
