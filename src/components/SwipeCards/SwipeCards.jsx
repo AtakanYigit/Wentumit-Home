@@ -2,7 +2,7 @@ import "./SwipeCards.scss";
 
 const SwipeCards = () =>{
     return (
-        <div className = "swipeCards">
+        <div className = "swipeCards" id = "how">
             <div id = "swipeCard3" className = "swipeCard">
                 <p>Send a link to your friends and you're ready to go.</p>
             </div>

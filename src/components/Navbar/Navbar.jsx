@@ -8,8 +8,6 @@ const Navbar = () =>{
                 <a href = "#" className = "navLogo">
                     <img src = {Logo} alt = "Wentumit"/>
                 </a>
-                <a href = "#">Home</a>
-                <a href = "#layer0">Features</a>
             </div>
 
             <a href = "https://www.wentumit.com/">
