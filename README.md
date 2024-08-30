@@ -16,8 +16,8 @@ Built with [Vite](https://vitejs.dev/) and [React.js](https://reactjs.org/). It 
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/yourusername/meeting-scheduler.git
-   cd meeting-scheduler
+   git clone https://github.com/AtakanYigit/Wentumit-Home.git
+   cd Wentumit-Home
    ```
 
 2. Install dependencies:
